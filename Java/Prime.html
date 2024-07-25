@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Q1</title>
+        <script>
+        function Prime(){
+            let num=document.getElementById("n1").value;
+            
+            let count ="0";
+            for(let i=1;i<=num;i++){
+                if(num%i==0){
+                    count++;
+             }
+                }
+                if(count == 2){
+                document.write ("prime number");
+                }
+                else{
+                    document.write("Not a prime Number");
+                }
+        }
+        </script>
+    </head>
+    <body>
+        Enter the Number <input type="text" placeholder="Enter the number " id="n1"onblur="ans()"/>
+        <br><br>
+        <button onclick="Prime()">verify</button>
+        <div id="output"></div>
+    </body>
+    
+</html>

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>ArrayFuunction</title>
+        <script>
+        //sum
+         const sum =()=> 10 + 20;
+            document.write("<br> Addition :"+sum());
+        //sub
+        const sub = (x,y)=>x-y;
+        document.write("<br>Subtraction:"+sub(10,20));
+        //Mul
+        const Mul = (x,y)=>{return(x*y)};
+        document.write("<br>Multiple:"+Mul(10,20)); 
+        //Div 
+        const Div = (x,y)=>{return(x/y)};
+        document.write("<br>Divide:"+Div(10,20));
+        //Biggest Number
+        const big =(x,y)=>{
+            if (x > y)
+                return x;
+            else
+                return y;
+        };
+        document.write("<br>Biggest Number:"+big(10,20));
+        //Fact
+        const fact=(n)=>{
+              let count="1";
+              for(let i=1;i<=n;i++){
+                count*=i; 
+              }
+              return count;
+            };
+              document.write("<br>Factorial:"+fact(5));
+        </script>
+    </head>
+    <body onload="add()">
+        
+
+        
+    </body>
+</html>
